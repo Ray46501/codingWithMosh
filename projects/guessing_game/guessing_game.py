@@ -9,7 +9,7 @@ while True:
     guess = int(input("Guess: "))
     current_guesses += 1
     
-    score = round(((level*level)/(current_guesses*current_guesses))/10)
+    score = round(((level*level)/(current_guesses*current_guesses))/(level/10))
     
     if guess == secret_num:
         print(f"The Secret Number was {secret_num} You Win with {current_guesses} guesses and a score of {score}!")
