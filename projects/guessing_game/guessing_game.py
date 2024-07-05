@@ -1,7 +1,7 @@
 import random
 
 level = int(input("LEVEL: "))
-secret_num = random.randint(0,level)
+secret_num = round(random.random()*level)
 current_guesses = 0
 
 
